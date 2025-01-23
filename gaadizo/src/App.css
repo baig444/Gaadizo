@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Matter';
+  src: url('/matter-regular.woff2') format('woff2'),
+}
+
+body {
+  font-family: 'Matter', sans-serif;
+}
+
+
+
+:root {
+  --text: #fff;
+  --text-primary: #0066CC;
+  --button: white;
+  --button-primary: #3399FF;
+}
+
+
+h2{
+  color: var(--text-primary);
+}
