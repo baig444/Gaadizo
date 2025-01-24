@@ -20,6 +20,7 @@ import { SparePartsSection } from "../components/spare-parts-section"
 import { PriceComparison } from "../components/price-comparison"
 import { WhyChooseSection } from "../components/why-choose-section"
 import { ModernFooter } from "../components/modern-footer"
+import { CarServiceFormComponent } from "../components/car-service-form"
 
 export default function Home() {
   const [selectedCity, setSelectedCity] = useState("")
@@ -71,11 +72,11 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-white relative">
-      <OfferBanners/>
+    <div className="min-h-screen bg-white relative w-full">
+      {/* <OfferBanners/> */}
       {/* Hero Section */}
        {/* Hero Section */}
-       <div className="grid lg:grid-cols-2 gap-8 p-4 md:p-8 lg:p-12 mt-2"
+       <div className="grid lg:grid-cols-2 gap-32 md:p-8  h-[100vh] items-center"
        style={{
         backgroundImage: `url('https://images.pexels.com/photos/4489729/pexels-photo-4489729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
         backgroundSize: "cover",
@@ -83,7 +84,6 @@ export default function Home() {
         backgroundRepeat: "no-repeat",
        }}
        >
-        <div className="space-y-8 pt-16">
           <div className="space-y-4 text-white">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
               Experience The Best<br />
@@ -93,9 +93,10 @@ export default function Home() {
               Get instant quotes for your car service
             </p>
           </div>
-
-          <div className="space-y-4 max-w-md">
-            <Select defaultValue={selectedCity} onValueChange={setSelectedCity}>
+            
+          <div className="space-y-4 flex justify-end fixed top-28 right-10 z-50 w-full">
+          <CarServiceFormComponent/>
+            {/* <Select defaultValue={selectedCity} onValueChange={setSelectedCity}>
               <SelectTrigger>
                 <SelectValue placeholder="Select City" />
               </SelectTrigger>
@@ -107,7 +108,7 @@ export default function Home() {
             </Select>
 
             {/* Car Brand Selection */}
-            <Select value={selectedBrand} onValueChange={setSelectedBrand}>
+            {/* <Select value={selectedBrand} onValueChange={setSelectedBrand}>
               <SelectTrigger>
                 <SelectValue placeholder="SELECT CAR BRAND" />
               </SelectTrigger>
@@ -116,10 +117,10 @@ export default function Home() {
                   <SelectItem key={brand} value={brand}>{brand}</SelectItem>
                 ))}
               </SelectContent>
-            </Select>
+            </Select> */}
 
             {/* Car Model Selection - Only shows when brand is selected */}
-            {selectedBrand ? (
+            {/* {selectedBrand ? (
               <Select>
                 <SelectTrigger>
                   <SelectValue placeholder="SELECT CAR MODEL" />
@@ -130,20 +131,20 @@ export default function Home() {
                   ))}
                 </SelectContent>
               </Select>
-            ):(null)}
+            ):(null)} */}
 
-            <Input 
+            {/* <Input 
               placeholder="ENTER MOBILE NUMBER" 
               type="tel"
               className="h-12"
               maxLength={10}
-            />
+            /> */}
 
-            <Button className="w-full h-12 text-lg bg-[#3399FF]">
+            {/* <Button className="w-full h-12 text-lg bg-[#3399FF]">
               CHECK PRICES FOR FREE
-            </Button>
+            </Button> */}
 
-            <div className="flex items-center justify-between pt-4">
+            {/* <div className="flex items-center justify-between pt-4">
               <div className="flex items-center gap-2">
                 <Star className="w-5 h-5 fill-green-500 text-green-500" />
                 <span className="font-bold text-xl">4.7<span className="text-sm">/5</span></span>
@@ -155,10 +156,9 @@ export default function Home() {
                 <div className="font-bold">2 Million+</div>
                 <div className="text-sm text-muted-foreground">Happy Customers</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
-      </div>
       <ServicesSection/>
        {/* Testimonials Section */}
        <div className="bg-gray-50 py-16">
