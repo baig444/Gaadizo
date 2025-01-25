@@ -62,7 +62,7 @@ export function CarServiceFormComponent() {
 
   return (
     <div>
-      <div className="bg-white rounded-lg shadow-lg p-6 max-w-lg space-y-6">
+      <div className="bg-white rounded-lg shadow-lg p-6 max-w-2xl space-y-6">
         {/* Location Selector */}
         <div className="mb-4">
           <div className="relative">
