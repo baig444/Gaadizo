@@ -87,8 +87,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-       <div className="lg:absolute top-0 right-0 lg:w-[35%] h-full  z-10">
-       <div className="space-y-8 lg:sticky lg:top-24 lg:bottom-10 z-50 flex justify-end px-10">
+       <div className="lg:absolute top-0 right-0 lg:w-[35%] h-full z-10">
+       <div className="space-y-8 lg:sticky lg:top-24 lg:bottom-10 z-50 flex justify-end px-4">
           <CarServiceFormComponent/>
           </div>
           </div>
