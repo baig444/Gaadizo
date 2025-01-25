@@ -61,8 +61,8 @@ export function CarServiceFormComponent() {
   }
 
   return (
-    <div className="sticky">
-      <div className="bg-white rounded-lg shadow-lg p-6 max-w-sm">
+    <div>
+      <div className="bg-white rounded-lg shadow-lg p-6 max-w-lg space-y-6">
         {/* Location Selector */}
         <div className="mb-4">
           <div className="relative">
@@ -104,7 +104,7 @@ export function CarServiceFormComponent() {
         </Button>
 
         {/* Stats */}
-        <div className="flex justify-between items-center text-sm">
+        <div className="flex justify-between items-center text-sm space-x-10">
           <div className="flex items-center gap-1">
             <span className="text-green-600">★</span>
             <span className="font-semibold">4.7/5</span>

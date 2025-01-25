@@ -65,14 +65,14 @@ export function WhyChooseSection() {
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-4xl px-8">
         {/* Benefits Section */}
         <div className="mb-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="mb-12"
           >
             <h2 className="text-3xl font-bold mb-4">Why Choose Gaadizo</h2>
             <p className="text-lg text-neutral-500 dark:text-neutral-400">
@@ -80,7 +80,7 @@ export function WhyChooseSection() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-2">
             {benefits.map((benefit, index) => (
               <motion.div
                 key={index}
@@ -88,7 +88,7 @@ export function WhyChooseSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="flex items-start gap-4 p-6 rounded-xl bg-white hover:shadow-lg transition-shadow"
+                className="flex items-start gap-4 p-6 rounded-xl bg-white hover:shadow-lg transition-shadow max-w-fit"
               >
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center">
                   <benefit.icon className="w-6 h-6 text-blue-500" />
@@ -108,7 +108,7 @@ export function WhyChooseSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="mb-12"
           >
             <h2 className="text-3xl font-bold mb-4">How Gaadizo Works</h2>
             <p className="text-lg text-neutral-500 dark:text-neutral-400">

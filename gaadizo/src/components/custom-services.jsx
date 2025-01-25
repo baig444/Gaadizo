@@ -54,7 +54,7 @@ export function CustomServicesComponent() {
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-3xl px-8">
         <div className="mb-8">
           <h2 className="text-4xl font-bold mb-2">Curated Custom Services</h2>
           <div className="mt-2 w-12 h-1 bg-red-500" />
@@ -85,7 +85,7 @@ export function CustomServicesComponent() {
           {/* Services Slider */}
           <div 
             ref={containerRef}
-            className="overflow-x-auto scrollbar-hide"
+            className="scrollbar overflow-x-auto"
           >
             <div className="flex gap-6 min-w-max pb-4">
               {services.map((service, index) => (

@@ -43,8 +43,8 @@ export function PriceComparison() {
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="text-center mb-16">
+      <div className="max-w-3xl px-8">
+        <div className="mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -71,7 +71,7 @@ export function PriceComparison() {
                     <Percent className="w-3 h-3" />
                     SAVE 30%
                   </div>
-                  <span className="text-orange-600 font-semibold">FourDoor Pricing</span>
+                  <span className="text-orange-600 font-semibold">Gaadizo Pricing</span>
                 </th>
                 <th className="p-6 bg-gray-50">
                   <span className="text-gray-600 font-semibold">Service Center Pricing</span>

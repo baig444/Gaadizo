@@ -36,8 +36,8 @@ export function AppDownloadComponent() {
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl px-8">
+        <div className="grid lg:grid-cols-1 gap-12">
           {/* Left Column - App Info */}
           <div className="space-y-8">
             <div>
@@ -60,7 +60,7 @@ export function AppDownloadComponent() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="text-lg text-gray-600"
+              className="text-lg text-gray-600 max-w-lg"
             >
               Experience hassle-free car service booking and management with our mobile app. 
               Get exclusive offers, real-time updates, and more!
@@ -99,7 +99,7 @@ export function AppDownloadComponent() {
           {/* Right Column - Stats */}
           <div 
             ref={statsRef}
-            className="grid grid-cols-2 gap-8"
+            className="grid grid-cols-2 max-w-lg"
           >
             {stats.map((stat, index) => (
               <motion.div
@@ -107,7 +107,7 @@ export function AppDownloadComponent() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: index * 0.1 }}
-                className="text-center"
+                
               >
                 <motion.div
                   initial={{ scale: 0 }}
@@ -133,7 +133,7 @@ export function AppDownloadComponent() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8 }}
-          className="mt-16 text-center"
+          className="mt-16"
         >
           <div className="relative inline-block">
             <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 to-blue-500/20 blur-3xl" />
