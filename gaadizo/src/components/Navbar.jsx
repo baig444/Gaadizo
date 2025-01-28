@@ -3,7 +3,7 @@ import { Car, Menu } from "lucide-react"
 import { Button } from "../components/ui/button"
 const Navbar = () => {
   return (
-    <div className="absolute top-0 left-0 z-10 w-full h-16">
+    <div className=" w-full h-16">
      {/* Navigation */}
      <nav className="flex items-center justify-between p-4">
         <div className="flex items-center gap-8">
